@@ -15,9 +15,9 @@ Please download all corresponding library listed in requirements.txt for fully u
 * **unjudged_count.py:** This file is used to count the unjudged documents for each dataset. 
 
 ***
-#### Folder description
-* **Msmarco**: includes all input folders for msmarco
-* **Deepdl**: includes all input folders for deep dl
+#### Folder Description
+* **Msmarco**: includes all input folders for ms marco dataset
+* **Deepdl**: includes all input folders for deep dl dataset (including 2019 and 2020)
 * **all_graphs**: includes all graphs generated and used in the experiment
 
 ***
