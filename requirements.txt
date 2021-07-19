@@ -1,0 +1,7 @@
+torch
+transformers
+pyserini==0.10.0.1
+matplotlib
+trectools
+numpy
+
