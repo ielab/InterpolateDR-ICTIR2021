@@ -16,9 +16,13 @@ Please download all corresponding library listed in requirements.txt for fully u
 
 ***
 #### Folder Description
-* **Msmarco**: includes all input folders for ms marco dataset
-* **Deepdl**: includes all input folders for deep dl dataset (including 2019 and 2020)
-* **all_graphs**: includes all graphs generated and used in the experiment
+* **Msmarco:** includes all input folders for ms marco dataset
+* **Deepdl:** includes all input folders for deep dl dataset (including 2019 and 2020)
+* **all_graphs:** includes all graphs generated and used in the experiment
 
 ***
+#### Input Generation
+* **ANCE:** Generation of ance scores can refer to [ANCE](https://github.com/terrierteam/pyterrier_ance)
+* **REP_bert:** Generation of Repbert scores can refer to [Repbert](https://github.com/jingtaozhan/RepBERT-Index)
+* **BM25:** Generation of BM25 scores can refer to [BM25](https://github.com/castorini/pyserini)
 
