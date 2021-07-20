@@ -17,7 +17,7 @@ entry_folder = os.getcwd()+'/'
 input_folder = entry_folder+ "Deepdl/ANCE_BM25/2020/"
 output_folder = entry_folder + "all_graphs/DeepDL/ance/2020/"
 
-if len(sys.argv)==2:
+if len(sys.argv)>=1:
     input_folder = sys.argv[1]
     output_folder = sys.argv[2]
 

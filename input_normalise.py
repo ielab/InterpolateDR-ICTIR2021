@@ -5,7 +5,7 @@ from tqdm import  tqdm
 import sys
 entry_file = sys.argv[1]
 if True:
-    input = open(entry_file + sys.argv[2], 'r')
+    input = open(entry_file + 'input/' + sys.argv[2], 'r')
     output = open(entry_file + "bm25.txt", 'w')
     lines = input.readlines()
     previous = lines[0].split()[0]
@@ -18,8 +18,8 @@ if True:
         items = line.split()
         qid = items[0]
         #rank = items[3]
-        did = items[2]
-        score = float(items[-2])
+        did = items[1]
+        score = float(items[-1])
         new_line = str(qid) + ' ' + did + ' '
 
         if qid != previous:
@@ -39,7 +39,7 @@ if True:
         new_line_list.append(new_line)
 
 if True:
-    input = open(entry_file+sys.argv[3], 'r')
+    input = open(entry_file+  'input/' + sys.argv[3], 'r')
     output = open(entry_file+"bert.txt", 'w')
     lines = input.readlines()
     previous = lines[0].split()[0]

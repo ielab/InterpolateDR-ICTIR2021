@@ -7,8 +7,8 @@ year = 2020 # if getting results on msmarco, setting year to 2019
 quriesfile = base_dir + "Deepdl/2020_qrels/" + "dev.qrels.tsv" #queries folder location, modify this if want to test on other dataset
 file_dir = base_dir + "Deepdl/Repbert_BM25/2020/" # input folder, modify this if want to test on other dataset
 graph_file_dir = base_dir+"all_graphs/DeepDL/rep/2020/" # graph folder, modify the location of the output graph.
-input_bm25 = "run.wikiQA.bm25.top2000.res" # input bm25 file name, modify
-input_bert = "rep.res" # input bert_based DR file name, modify
+input_bm25 = "pyserini_DL2020_bm25_top2000.tsv" # input bm25 file name, modify
+input_bert = "RepBERT_DL2020_top2000.res" # input bert_based DR file name, modify
 
 #above are parameters needed to set
 
@@ -49,7 +49,7 @@ for k, v in eval_dict.items():
         os.mkdir(v)
         for i in range(0,11):
             out_value = str(i/10)
-            os.system("/Users/dylanwang/workspace/infs7410/trec_eval/trec_eval -q -m " + k + " " + quriesfile + " " + ouput_file_dir + "output" + out_value+".txt" + " > " + v + out_value +".eval")
+            os.system(base_dir+"/trec_eval/trec_eval" + " -q -m " + k + " " + quriesfile + " " + ouput_file_dir + "output" + out_value+".txt" + " > " + v + out_value +".eval")
 
 os.system("python3 eval_graph.py " + file_dir + " " + graph_file_dir)
 
