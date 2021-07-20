@@ -22,7 +22,7 @@ Please download all corresponding library listed in requirements.txt for fully u
 
 ***
 #### Input Generation
-* **ANCE:** Generation of ance scores can refer to [ANCE](https://github.com/terrierteam/pyterrier_ance)
+* **ANCE:** Generation of ance scores can refer to [ANCE](https://github.com/microsoft/ANCE/)
 * **REP_bert:** Generation of Repbert scores can refer to [Repbert](https://github.com/jingtaozhan/RepBERT-Index)
 * **BM25:** Generation of BM25 scores can refer to [BM25](https://github.com/castorini/pyserini)
 
