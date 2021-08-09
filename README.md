@@ -26,3 +26,9 @@ Please download all corresponding library listed in requirements.txt for fully u
 * **REP_bert:** Generation of Repbert scores can refer to [Repbert](https://github.com/jingtaozhan/RepBERT-Index)
 * **BM25:** Generation of BM25 scores can refer to [BM25](https://github.com/castorini/pyserini)
 
+***
+#### Workflow:
+* **1:** Put files you want to do interpolation inside a derectory/input/
+* **2:** Change parameters in run.py (see comments) to define input folder, output folder, input run names, and qrel file location.
+* **3:** Use python3 run.py to get interpolation (it will do normalisation first, then interpolate the normlised scores, and do evaluations and then draw graphs)
+
