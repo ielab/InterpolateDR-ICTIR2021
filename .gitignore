@@ -133,3 +133,4 @@ dmypy.json
 lucene-index-msmarco
 **/**/*.txt
 Deepdl/*
+._*
