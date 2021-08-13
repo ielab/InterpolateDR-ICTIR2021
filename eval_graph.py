@@ -26,18 +26,19 @@ if not os.path.exists(histout_folder):
     os.mkdir(histout_folder)
 
 allset = {}
-allset["mrr10"] = glob.glob(input_folder + "eval/mrr10/*.eval")
+#allset["mrr10"] = glob.glob(input_folder + "eval/mrr10/*.eval")
 #allset["mrr3"]  = glob.glob("eval/mrr3/*.eval")
 #allset["ndcg"]  = glob.glob("eval/ndcg/*.eval")
 allset["ndcg10"]  = glob.glob(input_folder+"eval/ndcg10/*.eval")
-allset["ndcg200"]  = glob.glob(input_folder+"eval/ndcg200/*.eval")
-allset["ndcg500"]  = glob.glob(input_folder+"eval/ndcg500/*.eval")
-allset["ndcg1000"]  = glob.glob(input_folder+"eval/ndcg1000/*.eval")
+#allset["ndcg200"]  = glob.glob(input_folder+"eval/ndcg200/*.eval")
+#allset["ndcg500"]  = glob.glob(input_folder+"eval/ndcg500/*.eval")
+#allset["ndcg1000"]  = glob.glob(input_folder+"eval/ndcg1000/*.eval")
 allset["map"] = glob.glob(input_folder + "eval/map/*.eval")
 allset["recall"] = glob.glob(input_folder + "eval/recall/*.eval")
-allset["recall10"] = glob.glob(input_folder + "eval/recall10/*.eval")
-allset["recall200"] = glob.glob(input_folder + "eval/recall200/*.eval")
-allset["recall500"] = glob.glob(input_folder + "eval/recall500/*.eval")
+#allset["recall10"] = glob.glob(input_folder + "eval/recall10/*.eval")
+allset["recall100"] = glob.glob(input_folder + "eval/recall100/*.eval")
+allset["rr"] = glob.glob(input_folder + "eval/rr/*.eval")
+#allset["recall500"] = glob.glob(input_folder + "eval/recall500/*.eval")
 #allset["ndcg20"] = glob.glob(input_folder + "eval/ndcg20/*.eval")
 
 for key in allset:

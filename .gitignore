@@ -130,3 +130,6 @@ dmypy.json
 
 **/input/**
 **/output/**
+lucene-index-msmarco
+**/**/*.txt
+Deepdl/*
